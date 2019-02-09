@@ -1,0 +1,67 @@
+html {
+    font-size: 1em;
+}
+
+/* link*/
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #B2B1AE;
+}
+
+.current {
+    color: #DC6F5C;
+}
+
+/* body*/
+body {
+    background-color: #ffffff;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #333;
+}
+
+p {
+    margin-bottom: 1.3em;
+     font-family: 'Dosis', sans-serif;
+}
+
+
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 1.414em 0 0.5em;
+    font-weight: inherit;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.157em;
+}
+
+h2 {
+    font-size: 2.369em;
+
+}
+
+h3 {
+    font-size: 1.333em;
+
+}
+
+h4 {
+    font-size: 1.333em;
+
+}
+
+footer {
+    font-size: 1em;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
