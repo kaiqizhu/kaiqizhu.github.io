@@ -4,11 +4,11 @@ html {
 
 /* link*/
 
-a {
+nav li a {
     color: black;
 }
 
-a:hover {
+nav li a :hover {
     color: #B2B1AE;
 }
 
@@ -27,7 +27,7 @@ body {
 
 p {
     margin-bottom: 1.3em;
-     font-family: 'Dosis', sans-serif;
+    font-family: 'Dosis', sans-serif;
 }
 
 
