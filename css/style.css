@@ -50,7 +50,7 @@ img{
 .row{
   display: flex;
   flex-wrap: wrap;
-  padding:4px;
+  padding:3px;
 }
 
 .column{
@@ -59,7 +59,7 @@ img{
 }
 
 .column img {
-  margin:8px;
+  margin:5px;
   vertical-align: middle;
 }
 
@@ -98,7 +98,7 @@ img{
       float:right;
       color: black;
       width:100px;
-      padding: 14px;
+      padding: 5px;
       text-decoration: none;
       text-align: center;
   }
@@ -170,13 +170,15 @@ a.skip{
 	padding:5px;
 	text-decoration: none;
 	position: relative;
-    top: -100px;
-    transition: top ease-in 1s;
+  top: -100px;
+  left:20px;
+  transition: top ease-in 1s;
 }
 
 a.skip:focus{
 	background: white;
 	top: 10px;
+  left:20px;
 }
 
 
@@ -196,6 +198,11 @@ a.skip:focus{
 .menu a:hover{
   right: 50px;
   color:#000000;
+}
+
+i{
+  margin:20px;
+  font-family:  'Dosis', sans-serif;
 }
 
 footer {
