@@ -2,18 +2,118 @@ html {
     font-size: 1em;
 }
 
-/* link*/
 
-nav li a {
-    color: black;
+/*header*/
+
+.header {
+  padding:60px;
+  height:200px;
+  background-color: #cccccc;
+  background-image: url("../images/backgroundimg.jpg");
+  background-size:cover;
+  background-position: center;
+  position: relative;
+  background-repeat:no-repeat;
+  text-align: center;
+  color: white;
 }
 
-nav li a:hover {
+/* link*/
+.topnavbar {
+  display: flex;
+  flex-direction:column;
+  background-color: white;
+}
+
+.topnavbar a {
+    float: none;
+    width: 100%;
+    color: black;
+    padding:14px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.topnavbar a:hover:not(.active) {
     color: #B2B1AE;
 }
 
-.current {
+.topnavbar a.active{
     color: #DC6F5C;
+}
+
+img{
+  width: 98%;
+
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  padding:4px;
+}
+
+.column{
+  flex:50%;
+  max-width: 50%;
+}
+
+.column img {
+  margin:8px;
+  vertical-align: middle;
+}
+
+.columnlocation{
+  flex:100%;
+
+}
+
+.stayright{
+  position: absolute;
+  right: 20px;
+}
+
+@media screen and (min-width:700px){
+
+  .header {
+    padding:100px;
+    height:400px;
+    background-color: #ffffff;
+    background-image: url("../images/backgroundimg.jpg");
+    background-position:center;
+    position: relative;
+    background-size:cover;
+    background-repeat:no-repeat;
+    text-align: center;
+    color: white;
+  }
+  .topnavbar {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+
+  }
+
+  .topnavbar a {
+      float:right;
+      color: black;
+      width:100px;
+      padding: 14px;
+      text-decoration: none;
+      text-align: center;
+  }
+
+  .column {
+    flex:25%;
+    max-width:25%;
+  }
+
+  .columnlocation{
+    flex:50%;
+    max-width:100%;
+  }
+
+
 }
 
 /* body*/
@@ -25,20 +125,19 @@ body {
     color: #333;
 }
 
+.fa-instagram {
+  font-size:1.3em;
+  margin-bottom: 1.3em;
+  font-family: 'Dosis', sans-serif;
+}
+
 p {
-    margin-bottom: 1.3em;
+    margin: 20px;
     font-family: 'Dosis', sans-serif;
 }
 
-
-
-h1,
-h2,
-h3,
-h4 {
-    margin: 1.414em 0 0.5em;
-    font-weight: inherit;
-    line-height: 1.2;
+h1,h2,h3,h4{
+  margin:20px;
 }
 
 h1 {
@@ -60,18 +159,48 @@ h4 {
 
 }
 
-p a {
+/* p a {
     color: black;
 }
 p a:hover{
   color: #B2B1AE;
+} */
+
+a.skip{
+	padding:5px;
+	text-decoration: none;
+	position: relative;
+    top: -100px;
+    transition: top ease-in 1s;
 }
-p a:visited {
-    color: #B2B1AE;
+
+a.skip:focus{
+	background: white;
+	top: 10px;
+}
+
+
+.menu{
+  display: flex;
+  flex-direction:column;
+  position: fixed;
+  right:50px;
+  top: 300px;
+  text-align: left;
+}
+
+.menu a{
+  color:#cccccc
+}
+
+.menu a:hover{
+  right: 50px;
+  color:#000000;
 }
 
 footer {
-    font-size: 1em;
-    margin-top:15px;
-    margin-bottom: 15px;
+    font-size: 0.85em;
+    text-align:center;
+    margin:20px;
+
 }
